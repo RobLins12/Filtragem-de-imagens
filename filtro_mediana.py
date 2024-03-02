@@ -4,7 +4,7 @@ import sys
 
 def main():
     
-    img = cv.imread('/workspace/Filtragem-de-imagens/imagens1/peppers_gray_ruido.bmp')
+    img = cv.imread('imagens1/peppers_gray_ruido.bmp')
     if img is None:
         print('Não localizei a imagem:', img)
         sys.exit(1)
@@ -21,8 +21,8 @@ def main():
         cv.imshow('Median blur', medianBlur) 
 
         # In loop medianBlur
-        for i in range(3):
-            medianBlur = cv.blur(medianBlur, 3)
+        for i in range(2):
+            medianBlur = cv.medianBlur(medianBlur, 3)
             cv.imshow('Median blur ' + str(i), medianBlur) 
 
 if __name__ == '__main__':

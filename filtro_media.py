@@ -4,7 +4,7 @@ import sys
 
 def main():
     
-    img = cv.imread('/workspace/Filtragem-de-imagens/imagens1/peppers_gray_ruido.bmp')
+    img = cv.imread('imagens1/peppers_gray_ruido.bmp')
     if img is None:
         print('Não localizei a imagem:', img)
         sys.exit(1)
@@ -21,7 +21,7 @@ def main():
         cv.imshow('Average blur', averageBlur) 
 
         # In loop blur
-        for i in range(3):
+        for i in range(2):
             averageBlur = cv.blur(averageBlur, (3, 3)) 
             cv.imshow('Average blur ' + str(i), averageBlur) 
 

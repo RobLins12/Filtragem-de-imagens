@@ -4,7 +4,7 @@ import sys
 
 def main():
     
-    img = cv.imread('C:/Users/Suporte/Downloads/imagens/fruits.png')
+    img = cv.imread('imagens/fruits.png')
     if img is None:
         print('Não localizei a imagem:', img)
         sys.exit(1)
