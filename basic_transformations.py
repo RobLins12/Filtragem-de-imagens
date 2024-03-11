@@ -2,6 +2,7 @@ import numpy as np
 import cv2 as cv
 import sys
 
+# O código a seguir mostra como fazer transformações básicas em uma imagem usando open cv
 # Leitura da imagem e conversão para monocromática
 
 img = cv.imread("c:/Users/aluno/Downloads/gato-siames.jpg")

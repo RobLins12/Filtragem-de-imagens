@@ -2,6 +2,7 @@ import numpy as np
 import cv2 as cv
 import sys
 
+# O código a seguir mostra como aplicar filtros de realce usando open cv
 # Leitura da imagem e conversão para monocromática
 
 img = cv.imread("c:/Users/aluno/Downloads/erik-jan-leusink-IbPxGLgJiMI-unsplash-scaled.jpg")

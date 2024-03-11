@@ -2,6 +2,8 @@ import numpy as np
 import cv2 as cv
 import sys
 
+# O código a seguir mostra como aplicar o filtro da medina usando open cv
+
 def main():
     
     img = cv.imread('imagens1/peppers_gray_ruido.bmp')
@@ -16,11 +18,11 @@ def main():
 
         medianBlur = cv.medianBlur(img, 3)
   
-        # Showing the image 
+        # Mostrando a imagem
         cv.imshow('Original', img) 
         cv.imshow('Median blur', medianBlur) 
 
-        # In loop medianBlur
+        # Fazendo a operação em loop
         for i in range(2):
             medianBlur = cv.medianBlur(medianBlur, 3)
             cv.imshow('Median blur ' + str(i), medianBlur) 

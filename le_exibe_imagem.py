@@ -2,6 +2,8 @@ import numpy as np
 import cv2 as cv
 import sys
 
+# Código básico para ler e exibir imagem
+
 def main():
     
     img = cv.imread('imagens/fruits.png')
